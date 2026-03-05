@@ -4,14 +4,13 @@ public class Conta {
     public float saldo;
     public boolean status;
 
-
+// metodo construtor;
     public Conta( int numeroConta, int agencia, String nomeClient) {
         this.numeroConta = numeroConta;
         this.agencia = agencia;
         this.nomeCliente = nomeClient;
-        this.saldo = 0;
-        this.status = true;
-
+        this.saldo = 0.0f; //inicia zerada
+        this.status = true; //inicia ativa
     }
 
     public void depositar(float x) {
