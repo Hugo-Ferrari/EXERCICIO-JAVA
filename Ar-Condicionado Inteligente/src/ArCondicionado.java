@@ -3,9 +3,10 @@ public class ArCondicionado {
     private String marca, modelo;
     private int temperatura;
 
+    // construtor sem parametro;
     public ArCondicionado() {
         setTemperatura(0);
-        setMarca("");
+        setMarca(""); //não adicionado nada dentro da marca pois estamos usando um construtor sem parametro;
         setModelo("");
         this.ligado = false;
     }
@@ -16,7 +17,7 @@ public class ArCondicionado {
                 this.temperatura = t;
                 System.out.println("temperetura ajustada para " + t + "graus");
             } else {
-                System.out.println("temperatura fora da faixa;" );
+                System.out.println("temperatura fora da faixa;");
             }
         }
     }
@@ -29,20 +30,23 @@ public class ArCondicionado {
 
         }
     }
-    public void setModelo(String mo){
+
+    public void setModelo(String mo) {
         this.modelo = mo;
     }
 
     public void ligarAr() {
-        this.ligado = true;
-        System.out.println("ar ligado...");
-
+        if (!this.ligado) {
+            this.ligado = true;
+            System.out.println("ar ligado...");
+        }
     }
 
     public void desligarAr() {
-        this.ligado = false;
-        System.out.println("ar desligado..");
-
+        if(this.ligado) {
+            this.ligado = false;
+            System.out.println("ar desligado..");
+        }
     }
 
     public void ativarModoTurbo() {
@@ -63,17 +67,19 @@ public class ArCondicionado {
         return false;
     }
 
-    public int getTemperetura(){
+    public int getTemperetura() {
         return this.temperatura;
     }
-    public String getMarca(){
+
+    public String getMarca() {
         return this.marca;
     }
-    public String getModelo(){
+
+    public String getModelo() {
         return this.modelo;
     }
 
-    public String toString(){
-        return "Temperatura: " + getTemperetura() + "\n Marca: " +getMarca() + "\n Modelo: " +getModelo() + (this.ligado ? " \n Ligado" : " \n Desligado");
+    public String toString() {
+        return "Temperatura: " + getTemperetura() + "\n Marca: " + getMarca() + "\n Modelo: " + getModelo() + (this.ligado ? " \n Ligado" : " \n Desligado");
     }
 }
