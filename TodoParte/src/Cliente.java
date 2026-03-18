@@ -6,6 +6,7 @@ public class Cliente {
 
 // construtor sem parametro;
     public Cliente() {
+
     }
 // construtor com parametro
     public Cliente(int id, String cpf, String nome, String endereco) {
@@ -48,7 +49,7 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    @Override
+    @Override // reescreve todo o metodo herdado para esse modelo;
     public String toString() {
         return "Cliente{" +
                 "id=" + id +
