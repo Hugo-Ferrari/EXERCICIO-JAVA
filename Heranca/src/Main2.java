@@ -7,7 +7,7 @@ public class Main2 {
         Pleno pl1 = new Pleno("Hugo", "Java", 5000, 5);
         Senior sn1 = new Senior("Gustavo", "Java", 6000, 3000);
 
-        ArrayList<Desenvolvedor> devs = new ArrayList<>(); // criando um arrays de desenvolvedor para adicionar os objetos;
+        ArrayList<Desenvolvedor> devs = new ArrayList<>();  // criando um arrays de desenvolvedor para adicionar os objetos;
         //adicionando os objetos no arrays devs
         devs.add(jr1);
         devs.add(pl1);
