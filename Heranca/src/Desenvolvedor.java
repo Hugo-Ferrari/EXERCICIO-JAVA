@@ -1,4 +1,4 @@
-public class Desenvolvedor {
+public abstract class Desenvolvedor {
     protected String nome;
     protected String linguagem;
     protected float salarioBase;
@@ -46,9 +46,7 @@ public class Desenvolvedor {
     }
 
 
-    public void Codar(){
-        System.out.println("Desenvolvedor escrevendo codigo");
-    }
+    public abstract void Codar();
 
     public float calcularBonus(){
         return this.salarioBase * 0.05f;

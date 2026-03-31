@@ -19,6 +19,7 @@ public class CarroEletrico extends Veiculo{
         System.out.println("Carro eletrico movendo-se silenciosamente");
         return " ";
     }
+
     @Override
     public String abastecer(){
         System.out.println("Recarregando bateria em posta de carga rapida");

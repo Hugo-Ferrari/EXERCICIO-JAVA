@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args){
         //criar um objeto Desenvolvedor
 
-        Desenvolvedor dev1 = new Desenvolvedor();
+        //Desenvolvedor dev1 = new Desenvolvedor(); // com a classe desenvolvedor abstrata eu nn posso instanciar ela assim;
 
         //criar um junior
         Junior jr1 = new Junior("Alice", "Java", 4000, "Hugo");
