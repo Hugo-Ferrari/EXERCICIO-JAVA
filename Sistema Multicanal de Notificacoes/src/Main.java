@@ -7,8 +7,9 @@ public class Main{
 
         CanalNoticiacoes email1 = new Email("Hugo" , "POO" , "venha para a aula de programação");
         CanalNoticiacoes SMS1 = new SMS("arthur", "venha tomar vacina rapidamente" , 992809719);
-        CanalNoticiacoes Whats1 = new WhatsApp("Yamim" , "venha para a Uni-Facef" ,"Enviado");
+        CanalNoticiacoes Whats1 = new WhatsApp("Yasmim" , "venha para a Uni-Facef" ,"Enviado");
 
+        //adicionando objetos dentro do arrayList
         canais.add(email1);
         canais.add(SMS1);
         canais.add(Whats1);

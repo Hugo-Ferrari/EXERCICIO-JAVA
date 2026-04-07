@@ -1,23 +1,23 @@
 public class Senior extends Desenvolvedor {
-    private float verbaLiderança;
+    private float verbaLideranca;
 
     public Senior() {
         super(); // chamando construtor da classe pai;
     }
 
 
-    public Senior(String nome, String linguagem, float salarioBase, float verbaLiderança) {
+    public Senior(String nome, String linguagem, float salarioBase, float verbaLideranca) {
         super(nome, linguagem, salarioBase); // chamando construtor da classe pai;
-        this.verbaLiderança = verbaLiderança;
+        this.verbaLideranca = verbaLideranca;
     }
 
 
     public float getVerbaLiderança() {
-        return verbaLiderança;
+        return verbaLideranca;
     }
 
-    public void setVerbaLiderança(float verbaLiderança) {
-        this.verbaLiderança = verbaLiderança;
+    public void setVerbaLiderança(float verbaLideranca) {
+        this.verbaLideranca = verbaLideranca;
     }
 
    @Override
@@ -34,7 +34,7 @@ public class Senior extends Desenvolvedor {
     public String toString() {
         return "Senior{" +
                 super.toString()+
-                "verbaLiderança=" + verbaLiderança +
+                "verbaLideranca=" + this.verbaLideranca +
                 '}';
     }
 }
